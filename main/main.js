@@ -40,12 +40,12 @@ module.exports = function main(a) {
 			line3.push('..|');
 		}
 	}
-	line1.push('\n');
-	line2.push('\n');
-	line3.push('\n');
-	actual[0] = line1.join('');
-	actual[1] = line2.join('');
-	actual[2] = line3.join('');
-    console.log("Debug Info");
+	actual[0] = line1.join(' ');
+	actual[2] = line2.join(' ');
+	actual[4] = line3.join(' ');
+	actual[1] = '\n';
+	actual[3] = '\n';
+	actual[5] = '\n';
+    console.log(actual.join(''));
 	return actual.join('');
 };
